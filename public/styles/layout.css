@@ -23,6 +23,19 @@ body {
   justify-content: space-around;
 }
 
+main {
+  width: 90%;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: url('../images/cubes.png');
+  background-color: #d49e31;
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -40,6 +53,8 @@ body {
   background-color: #ffd2d2
   
 }
+
+
 
 .tweeter-logo {
   font-family: 'Bungee', cursive;
