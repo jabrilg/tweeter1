@@ -29,10 +29,10 @@ main {
   position: relative;
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   background-image: url('../images/cubes.png');
-  background-color: #d49e31;
+  background-color: #880e0e;
 }
 
 
