@@ -23,17 +23,7 @@ body {
   justify-content: space-around;
 }
 
-main {
-  width: 90%;
-  z-index: 3;
-  position: relative;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  flex-direction: column;
-  background-image: url('../images/cubes.png');
-  background-color: #880e0e;
-}
+/* main .container */
 
 
 .container {
