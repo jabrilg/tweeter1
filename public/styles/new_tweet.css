@@ -1,6 +1,33 @@
-.new-tweet {
+.new_tweet {
     width: 100%;
     padding: 1em;
   
   }
+
+  .text-container textarea {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   overflow: auto;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 1em;
+  resize: none;
+  border: none;
+  border-bottom: 4px solid black;
+  }
+
+  .tweet-container button {
+      background-color: rgb(62, 62, 207);
+      color: #fff;
+      font-family: 'bungee';
+  }
+
+  .tweet-container .counter {
+      font-family: 'bungee';
+  }
+
+  
+  
+ 
   
