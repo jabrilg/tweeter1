@@ -17,51 +17,110 @@
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
   padding-top: 120px;
-  /* display: flex; */
+  display: flex;
   justify-content: space-around;
-}
-.main-header {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 120px;
-}
-
-
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: px;
-  max-width: 600;
-  padding-right: 50px;
-  background-color: #f4f1ec;
   
-}
-
-.isa_error{
-  margin: 10px 0px;
-  padding: 12px;
-  background-color: #ffd2d2
-  
-}
-
-
-
-.tweeter-logo {
-  font-family: 'Bungee', cursive;
-  font-style: italic;
-  font-weight: 400;
-  color: #00aced;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-right: 50px;
+  background-color: #f4f1ec;
+  max-width: 600px;
+  padding-top: 100px;
+}
+
+.isa_error  {
+  
+  margin: 10px 0px;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+  font-size: medium; 
+}
+
+
+.userTweet {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border: 3px solid black;
+  padding: 5px;
+}
+.userTweet:hover {
+  box-shadow: 3px 6px black;
+}
+.down-arrow {
+  position: absolute;
+  right: 140px;
+  bottom: 15px;
+  color: rgb(225, 238, 41);
+  transition: all 0.3s;
+  font-size: 28px;
+  animation: 1s linear 0s infinite downArrow;
+}
+.logo {
+  font-family: "Bungee", cursive;
+  font-size: 40px;
+}
+
+.content {
+  font-family: "Source Sans Pro", sans-serif;
+  float: right;
+  margin-right: 30px;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: small;
+  
+}
+
+.username {
+  color: #4056A1;
+}
+.name { 
+  color: grey;
+}
+.tweet {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+/* footer with time and icons */
+.tweetTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: small;
+  border-top: 2px solid black; 
+  padding: auto;
+}
+
+.fas {
+  color: navy;
+}
+.fas:hover{
+  color: orange;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+}

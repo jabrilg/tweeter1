@@ -1,0 +1,13 @@
+#scrollUp {
+    position: fixed;
+    bottom: 10%;
+    right: 1%;
+    border-radius: 30%;
+    padding: 0.6em 1em;
+    font-size: 25px;
+  
+  }
+  
+  #scrollUp:hover {
+    background-color: rgb(12, 12, 14);
+  }

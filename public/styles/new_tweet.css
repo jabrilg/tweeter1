@@ -1,33 +1,129 @@
 .new_tweet {
-    width: 100%;
-    padding: 1em;
-  
-  }
+  width: 100%;
+  padding: 1em;
 
-  .text-container textarea {
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-   overflow: auto;
+}
+
+
+.tweet-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em ;
+}
+
+.tweet-container button {
+  background-color: rgb(62, 62, 207);
+  color: #fff;
+  font-family: 'bungee';
+}
+.tweet-container .counter {
+  font-family: 'bungee';
+
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.label-for-tweet {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.textarea {
+
+  overflow: auto;
   outline: none;
   background-color: transparent;
   margin-bottom: 1em;
   resize: none;
   border: none;
   border-bottom: 4px solid black;
-  }
-
-  .tweet-container button {
-      background-color: rgb(62, 62, 207);
-      color: #fff;
-      font-family: 'bungee';
-  }
-
-  .tweet-container .counter {
-      font-family: 'bungee';
-  }
-
   
+}
+.avatar {
+  display: flex;
+}
+
+.red {
+  color: red;
+}
+.tweet-data {
   
- 
-  
+  padding: 1em;
+  margin-bottom: 2em;
+}
+.tweet-data-article header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-data-article header p {
+  margin-top: 0;
+  font-weight: 600;
+}
+.tweet-data-article {
+  border: 2px solid black;
+  padding: 1em;
+  margin-bottom: 1em;
+
+}
+
+
+.tweet-data-article:hover {
+  box-shadow: 7px 10px 0px 1px rgba(184,184,184,1)
+}
+
+.icons .fas {
+  color: rgb(44, 44, 116);
+  font-size: 0.6em;
+  letter-spacing: 0.4em;
+}
+.icons .fas:hover {
+  color: goldenrod;
+}
+
+.tweet-data footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.date {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  padding-right: 0.5em;
+}
+/* .tweet-text {
+  word-break: break-all;
+} */
+
+
+
+.alert {
+  border: 4px solid #d00;
+  color:#d00;
+  font-family: 'Source Sans Pro';
+  margin: 0 auto;
+  width: 60%;
+  padding: 0.6em;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+
+}
+
+/* .abc {
+  background-color: green
+} */
