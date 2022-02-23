@@ -1,3 +1,11 @@
+let defaultCharsLeft = 140;
+const displayError = err_msg => {
+  $("form")
+    .find(".error_msg")
+    .text(err_msg)
+    .show()
+    .slideDown("slow");
+};
 $(document).ready(function() {
 
     const renderTweets = function(tweets) {
@@ -13,6 +21,29 @@ $(document).ready(function() {
     const $form = $('#new_tweet-form');
     $form.submit(function(e) {
       e.preventDefault();
+
+      $(this)
+      .find("p")
+      .hide()
+      .slideDown("slow");
+    // if content is more than 14 characters
+    if (
+      $(this)
+        .find("textarea")
+        .val().length > defaultCharsLeft
+    ) {
+      const error_msg = "You cannot exceed more than 140 characters";
+      return displayError(error_msg);
+    }
+    // if content is empty
+    if (
+      $(this)
+        .find("textarea")
+        .val().length < 1
+    ) {
+      const error_msg = "You cannot post an empty tweet.";
+      return displayError(error_msg);
+    }
   
       let charCount = $('#tweet-text').val();
   
